@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang "en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial scale=1.0"/>
+    <title>Responsiivinen suunnittelu</title>
+    <style>
+      /*mobile ensin*/
+        body {
+            background-color: aliceblue;
+        }
+        p {
+          font-family: 'Courier New', Courier, monospace;
+          width: 500px;
+          margin: auto;
+        }
+
+        @media screen and (min-width: 600px) {
+          body {
+            background-color: blueviolet;}            
+        }
+
+        @media screen and (min-width: 700px) and (max-width: 800px) {
+          body {
+            background-color: green;
+          }   
+        }
+
+        #koira {
+          width: 100%;
+          max-width: 500px;
+        }
+
+        @media screen and (min-width:500px) {
+          #koira {
+            display: block;
+            margin: auto;
+          }
+          #taustakuva {
+            background-image: url(/img/rose.jpg);
+            background-position: center top;
+          }
+        }
+
+        #koira2 {
+          width: 50%;
+          height: 100px;
+          object-fit: cover;
+        }
+       
+        #taustakuva {
+          width: 50%;
+          height: 300px;
+          background-color: aliceblue;
+          background-image: url(/img/pienikukka.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          /*background-attachment: scroll;*/
+
+        }
+
+    </style>
+  </head>
+  <body>
+    <h3>Otsikko</h3>
+    <p>Lorem</p>
+    <h3>Normaali IMG kuva ja mediasäännöt</h3>
+    <img id='koira' src="/img/dog.jpg">
+
+    <h3>Object Fit</h3>
+    <img id='koira2' src="/img/dog.jpg">
+
+    <h3>Taustakuva</h3>
+    <div id="taustakuva"></div>
+  </body>
+</html>
