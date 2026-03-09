@@ -9,6 +9,7 @@ export default defineConfig({
                 home: resolve(__dirname, 'index.html'),
                 getstarted: resolve(__dirname, 'getstarted/index.html'),
                 about: resolve(__dirname, 'about/index.html'),
+                bmicalculator: resolve(__dirname, 'bmicalculator/index.html'),
             },
         },
     },

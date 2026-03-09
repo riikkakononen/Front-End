@@ -1,27 +1,52 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
-nav::after {
-    content: "";
-    clear: both;
-    display: table;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav {
+    background-color:  rgb(183, 219, 183);
+    padding: 0;
+    /*box-shadow: 0 8px -6px black;*/
+    /*height: 100px;*/
+    margin: auto;
+    border-radius: 0 0 12px 12px;
+    width: 75%;
 }
 
 nav ul {
     list-style-type: none;
-    margin: auto;
+    display: flex;
+    align-items: center;
+    margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: rgba(77, 161, 77, 0.459);
-    border-radius: 0 0 12px 12px;
-    width: 70%;
+}
+
+nav li.logo a {
+    background-color: white;
+    background-image: linear-gradient(45deg, rgb(30, 46, 30), rgb(83, 151, 83));
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    font-size: larger;
+    font-weight: 600;
 }
 
 nav li {
-    float: left;
-    margin-right: 1rem;
-    margin-left: 1rem;
+    margin: 0 1rem;
 }
 
 nav a {
@@ -32,6 +57,10 @@ nav a {
     text-decoration: none;
 }
 
+nav ul li:last-child {
+    margin-left: auto;
+}
+
 nav a:hover {
     color: green;
 }
@@ -39,6 +68,54 @@ nav a:hover {
 nav a:active {
     color: white;
 }
+
+nav li.dropdown {
+    position: relative; /* Ankkuroidaan li-elementtiin */
+}
+
+/* Piilotetaan submenu oletuksena */
+nav ul.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(230, 233, 230);
+    border-radius: 12px 12px 12px 12px;
+    min-width: 200px;
+
+    /* ettei floatit sotke? */
+
+    overflow: visible;
+}
+
+/* Submenu itemit pystysuoraan */
+
+nav ul.submenu li {
+    float: none;
+    margin: 0;
+}
+
+/* Linkit submenuun */
+
+nav ul.submenu li a {
+    padding: 14px 18px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Näytetään submenu, kun hover/keyboard focus on Health-li:ssä */
+
+nav li.dropdown:hover > ul.submenu,
+nav li.dropdown:focus-within > ul.submenu {
+    display: block;
+}
+
 
 section {
     margin-top: 50px;
@@ -70,11 +147,118 @@ p ul {
     list-style-type: circle;
 }
 
+.mood-buttons {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  max-width: 600px;
+  margin: 0 auto; */
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.mood-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid rgb(1, 56, 1);
+  border-radius: 999px;
+  background: white;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.mood-btn:hover {
+    background-color: rgb(230, 233, 230);
+}
+
+.mood-btn.selected {
+  background: rgb(183, 219, 183);
+  color: rgb(1, 56, 1);
+  font-weight: 600;
+  box-shadow: inset 0 0 0 1px rgb(83, 151, 83);
+}
+
+.energy-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.5rem;
+  max-width: 400px;
+  margin: 0 auto 1rem auto;
+}
+
+.energy-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid rgb(1, 56, 1);
+  border-radius: 999px;
+  background-color: white;
+  color: rgb(1, 56, 1);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.energy-btn:hover {
+  background-color: rgb(230, 243, 230);
+}
+
+.energy-btn.selected {
+  background-color: rgb(183, 219, 183);
+  color: rgb(1, 56, 1);
+  font-weight: 600;
+  box-shadow: inset 0 0 0 1px rgb(83, 151, 83);
+}
+
+.entry-filter {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.entry-actions {
+  margin-top: 0.75rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.edit-entry-btn,
+.delete-entry-btn {
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.edit-entry-btn {
+  border: 1px solid rgb(1, 56, 1);
+  color: rgb(1, 56, 1);
+}
+
+.edit-entry-btn:hover {
+  background-color: rgb(230, 243, 230);
+}
+
+.delete-entry-btn {
+  border: 1px solid #8b3a3a;
+  color: #8b3a3a;
+}
+
+.delete-entry-btn:hover {
+  background-color: #f7e6e6;
+}
+
 footer {
-    background-color: rgba(77, 161, 77, 0.459);
+    background-color: rgb(183, 219, 183);
     width: 100%;
     height: 80px;
     color: rgb(1, 56, 1);
     text-align: center;
     padding-top: 30px;
 }
+

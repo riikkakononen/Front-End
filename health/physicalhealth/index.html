@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alignment Guide</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="logo"><a href="/~riikkono/AlignmentGuide/">Alignment Guide</a></li>
+        <li><a href="/~riikkono/AlignmentGuide/nutrition/">Nutrition</a></li>
+        <li><a href="/~riikkono/AlignmentGuide/movement/">Movement</a></li> 
+        <li class="dropdown">
+          <a href="/~riikkono/AlignmentGuide/health/">Health</a>
+          <ul class="submenu">
+            <li class="requires-auth"><a href="/~riikkono/AlignmentGuide/health/mentalhealth/">Mental Health</a></li>
+            <li class="requires-auth"><a href="/~riikkono/AlignmentGuide/health/physicalhealth/">Physical Health</a></li>
+          </ul>
+        </li>
+        <li><a href="/~riikkono/AlignmentGuide/about/">About</a></li>
+        <li id="auth-link" class="dropdown">
+          <a href="/~riikkono/AlignmentGuide/login/">Log in</a>
+          <ul class="submenu">
+            <li><a href="/~riikkono/AlignmentGuide/register/">Don't have an account? Register here</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <section>
+      <h1>Physical Health Diary</h1>
+      Get started with <span id="lightgreen">Alignment Guide</span>
+    </section>
+
+    <section>
+      <h2 id="entry-form-title">Create a new entry</h2>
+
+      <form class="physicalhealthForm">
+        <label for="entry_date">Date</label>
+        <input type="date" id="entry_date" name="entry_date" />
+
+        <label for="energy_level">Energy level</label>
+        <div class="energy-buttons">
+          <button type="button" class="energy-btn" data-energy="high">high</button>
+          <button type="button" class="energy-btn" data-energy="elevated">elevated</button>
+          <button type="button" class="energy-btn" data-energy="neutral">neutral</button>
+          <button type="button" class="energy-btn" data-energy="decreased">decreased</button>
+          <button type="button" class="energy-btn" data-energy="very low">very low</button>          
+        </div>
+
+        <label for="symptoms">Symptoms</label>
+        <textarea id="symptoms" name="symptoms" placeholder="Write your symptoms here..."></textarea>
+
+        <button type="submit" id="entry-submit-btn">Save entry</button>
+        <button type="button" id="cancel-edit-btn" style="display: none;">Cancel edit</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Your entries</h2>
+      <div class="entry-filter">
+        <label for="filter-date">Filter by date</label>
+        <input type="date" id="filter-date" name="filter-date"/>
+        <button type="button" id="clear-filter-btn">Show all</button>
+      </div>
+
+      <div id="entries"></div>
+    </section>
+
+    <footer>Copyright by Ri</footer>
+    <script type="module" src="/src/js/physicalhealth.js"></script>
+  </body>
+</html>

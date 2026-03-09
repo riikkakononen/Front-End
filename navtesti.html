@@ -1,0 +1,85 @@
+<li class="dropdown">
+    <a href="/~riikkono/AlignmentGuide/health/">Health</a>
+    <ul class="submenu">
+      <li><a href="/~riikkono/AlignmentGuide/health/mentalhealth/">Mental Health Guides</a></li>
+      <li><a href="/~riikkono/AlignmentGuide/health/physicalhealth/">Physical Health Diary></a></li>
+      <li><a href="/~riikkono/AlignmentGuide/health/BMI/">BMI-calculator></a></li>
+    </ul>
+</li>
+
+<!-- back-up alkuperäinen nav html -->
+
+    <nav>
+      <ul>
+        <li><a href="/~riikkono/AlignmentGuide/">Alignment Guide</a></li>
+        <li><a href="/~riikkono/AlignmentGuide/nutrition/">Nutrition</a></li>
+        <li><a href="/~riikkono/AlignmentGuide/movement/">Movement</a></li>
+        <li><a href="/~riikkono/AlignmentGuide/health/">Health</a></li>
+        <li><a href="/~riikkono/AlignmentGuide/about/">About</a></li>
+      </ul>
+    </nav>
+
+<!-- back-up alkuperäinen nav css -->
+
+
+<style>
+
+nav::after {
+content: "";
+clear: both;
+display: table;
+}
+
+nav {
+    background-color: rgba(77, 161, 77, 0.459);
+    padding: 0;
+    /*box-shadow: 0 8px -6px black;*/
+    /*height: 100px;*/
+    margin: auto;
+    border-radius: 0 0 12px 12px;
+    width: 75%;
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+nav li:first-child a {
+    background-color: white;
+    background-image: linear-gradient(45deg, rgb(30, 46, 30), rgb(52, 114, 52));
+    /*background-size: 20%;*/
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    font-size: larger;
+    font-weight: 600;
+    /*margin-right: ?px ;*/
+
+}
+
+nav li {
+    float: left;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+nav a {
+    display: block;
+    color: rgb(1, 56, 1);
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: green;
+}
+
+nav a:active {
+    color: white;
+}
+</style>

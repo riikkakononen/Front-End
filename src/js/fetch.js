@@ -12,7 +12,7 @@ const fetchData = async (url, options = {}) => {
 
     if (!response.ok) {
       const errorData = await response.json();
-      return { error: errorData.message || 'An error occurred' };
+      return { error: errorData.error || errorData.message || 'An error occurred' };
     }
     return await response.json(); // Return successful response data
   } catch (error) {
