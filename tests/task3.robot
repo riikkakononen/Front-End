@@ -4,6 +4,7 @@ Library    Browser
 *** Test Cases ***
 Test Web Form Fields
     New Browser    chromium    headless=No    slowMo=2000 ms
+    New Context
     New Page    https://www.selenium.dev/selenium/web/web-form.html
 
     Wait For Elements State    text=Submit    visible
@@ -17,7 +18,7 @@ Test Web Form Fields
     
     # File Input
     Wait For Elements State     css=input[type="file"]      visible
-    Upload File By Selector     css=input[type="file"]      C:/Users/Omistaja/downloads/kosinilause.pdf
+    Upload File By Selector     css=input[type="file"]      /Users/riikka/Downloads/02. Kognitiivinen katselmointi.pdf
     
 
     # Checkbox

@@ -1,0 +1,165 @@
+I0420 22:01:22.572661  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572711  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572717  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572720  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572723  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572726  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572729  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572730  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572733  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572734  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572737  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572738  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572741  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572743  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572745  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572747  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572749  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572751  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572753  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572755  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572758  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572760  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572762  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572764  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572766  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572768  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572772  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572773  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572776  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572778  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572780  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572782  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572784  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572786  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572788  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572790  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572792  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572797  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572799  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572801  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572803  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572804  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572806  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572807  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572809  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572811  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572812  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572814  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572816  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572817  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572819  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572821  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572824  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572825  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572827  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572828  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572830  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572832  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572834  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572835  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572837  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572838  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572840  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572841  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572846  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572847  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572849  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572850  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572854  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572856  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572858  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572860  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572862  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572866  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572867  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572869  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572872  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572873  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572876  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572878  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572880  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572881  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572883  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572884  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572886  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572887  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572889  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572890  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572893  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572895  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572898  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572899  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572901  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572902  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572905  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572906  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572908  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572910  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572913  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572915  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572917  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572918  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572921  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572922  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572924  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572925  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572928  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572929  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572931  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572934  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572938  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572939  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572941  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572942  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572945  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+I0420 22:01:22.572946  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(8, generation: 1)
+I0420 22:01:22.572948  259624 ev_poll_posix.cc:593] FD from fork parent still in poll list: fd(6, generation: 1)
+{"level":30,"time":"2026-04-20T19:01:22.768Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Listening on 127.0.0.1:52545"}
+{"level":30,"time":"2026-04-20T19:01:23.796Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-04-20T19:01:24.070Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Adding browser to stack: chromium, version: 147.0.7727.15"}
+{"level":30,"time":"2026-04-20T19:01:24.071Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-04-20T19:01:24.071Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-04-20T19:01:24.074Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Start of node method newContext"}
+{"level":30,"time":"2026-04-20T19:01:24.074Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":800,\"height\":600}}"}
+{"level":30,"time":"2026-04-20T19:01:24.074Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"currentBrowser: {\"_contextStack\":[],\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@6e13b2cd1a5db2bf214b6ff2ca0b102f\"},\"name\":\"chromium\",\"id\":\"browser=9406bc17-6ea5-4243-95c5-1fc0a852d351\",\"headless\":false}"}
+{"level":30,"time":"2026-04-20T19:01:24.074Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Trace file: "}
+{"level":30,"time":"2026-04-20T19:01:24.079Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Setting default timeout for context context=7e4650fa-b644-45e0-8848-cdc103ef0228 to 10000"}
+{"level":30,"time":"2026-04-20T19:01:24.079Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Changed active context: context=7e4650fa-b644-45e0-8848-cdc103ef0228"}
+{"level":30,"time":"2026-04-20T19:01:24.079Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"End of node method newContext"}
+{"level":30,"time":"2026-04-20T19:01:24.081Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-04-20T19:01:24.082Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"currentBrowser: {\"_contextStack\":[{\"id\":\"context=7e4650fa-b644-45e0-8848-cdc103ef0228\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@602dceae541fa4572ed49ac5332b526d\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":800,\"height\":600}},\"traceFile\":\"\"}],\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@6e13b2cd1a5db2bf214b6ff2ca0b102f\"},\"name\":\"chromium\",\"id\":\"browser=9406bc17-6ea5-4243-95c5-1fc0a852d351\",\"headless\":false}"}
+{"level":30,"time":"2026-04-20T19:01:24.223Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Video path: undefined"}
+{"level":30,"time":"2026-04-20T19:01:24.223Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Changed active page"}
+{"level":30,"time":"2026-04-20T19:01:26.297Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"End of node method newPage"}
+{"level":30,"time":"2026-04-20T19:01:26.309Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Start of node method getElement"}
+{"level":30,"time":"2026-04-20T19:01:26.309Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Strict mode is enabled, find Locator with xpath=(//a[@href='/~riikkono/AlignmentGuide/login/' and text()='Log in'])[1] in page."}
+{"level":30,"time":"2026-04-20T19:01:26.326Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"End of node method getElement"}
+{"level":30,"time":"2026-04-20T19:01:26.329Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-04-20T19:01:26.329Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Strict mode is enabled, find Locator with xpath=(//a[@href='/~riikkono/AlignmentGuide/login/' and text()='Log in'])[1] in page."}
+{"level":30,"time":"2026-04-20T19:01:28.392Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-04-20T19:01:28.397Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-20T19:01:28.397Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Strict mode is enabled, find Locator with css=input[name=\"email\"] in page."}
+{"level":30,"time":"2026-04-20T19:01:32.435Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-20T19:01:32.440Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-20T19:01:32.440Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Strict mode is enabled, find Locator with css=input[name=\"password\"] in page."}
+{"level":30,"time":"2026-04-20T19:01:36.465Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-20T19:01:36.470Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-04-20T19:01:36.470Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Strict mode is enabled, find Locator with \"Login\" in page."}
+{"level":30,"time":"2026-04-20T19:01:38.526Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-04-20T19:01:38.533Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-20T19:01:38.536Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-20T19:01:38.537Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-20T19:01:38.537Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-20T19:01:38.538Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-20T19:01:38.538Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-20T19:01:38.539Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-20T19:01:38.539Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-20T19:01:38.539Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Changed active context: context=7e4650fa-b644-45e0-8848-cdc103ef0228"}
+{"level":30,"time":"2026-04-20T19:01:38.539Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Changing current active page: page=a91f1310-f1ff-4dd0-8058-5ed87a55cbe9"}
+{"level":30,"time":"2026-04-20T19:01:38.539Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Changed active page"}
+{"level":30,"time":"2026-04-20T19:01:38.545Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Start of node method closeContext"}
+{"level":30,"time":"2026-04-20T19:01:38.555Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Removed page=6d481814-8e70-47c8-a177-00d4eabd451f from context=7e4650fa-b644-45e0-8848-cdc103ef0228 page stack"}
+{"level":30,"time":"2026-04-20T19:01:38.556Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"End of node method closeContext"}
+{"level":30,"time":"2026-04-20T19:01:38.578Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-04-20T19:01:38.606Z","pid":7659,"hostname":"Riikka-Nooras-MacBook-Air.local","msg":"End of node method closeAllBrowsers"}

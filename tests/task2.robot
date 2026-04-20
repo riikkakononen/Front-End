@@ -4,7 +4,8 @@ Resource    ag_keywords.robot
 
 *** Test Cases ***
 Login to AlignmentGuide
-    New Browser    chromium    headless=No  
+    New Browser    chromium    headless=No 
+    New Context 
     New Page       http://localhost:5173/~riikkono/AlignmentGuide/
 
     ${Page Title}=    Get Title
@@ -14,8 +15,8 @@ Login to AlignmentGuide
     Click with Options    ${login}    delay=3 s
 
     # Kirjoita käyttäjätunnus ja salasana
-    Type Text    id=email    ${Email}     # Huom: ${Email} on muuttuja tiedostosta Keywords.robot
-    Type Secret  id=password    $Password       # Huom: $Password on muuttuja tiedostosta Keywords.robot
+    Type Text    css=input[name="email"]    ${Email}     # Huom: ${Email} on muuttuja tiedostosta ag_keywords.robot
+    Type Secret  css=input[name="password"]    $Password       # Huom: $Password on muuttuja tiedostosta ag_keywords.robot
     
     # Seuraavaksi olisi kirjautumispainikkeen napsauttaminen
      Click with Options   "Login"   delay= 5 s 

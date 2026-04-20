@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.3 on darwin)" generated="2026-04-20T22:00:04.005341" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/riikka/Downloads/AG-Front-End/tests">
+<suite id="s1-s1" name="Task2" source="/Users/riikka/Downloads/AG-Front-End/tests/task2.robot">
+<test id="s1-s1-t1" name="Login to AlignmentGuide" line="6">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-04-20T22:00:04.077550" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/riikka/Downloads/AG-Front-End/tests/outputs/browser/traces/temp/3f5bd990-8959-4f30-8da9-402851afc453"}</msg>
+<msg time="2026-04-20T22:00:04.091279" level="INFO">Starting Browser process /Users/riikka/Downloads/AG-Front-End/.venv/lib/python3.14/site-packages/Browser/wrapper/index.js using at 127.0.0.1:52464</msg>
+<msg time="2026-04-20T22:00:05.541834" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/riikka/Downloads/AG-Front-End/tests/outputs/browser/traces/temp/3f5bd990-8959-4f30-8da9-402851afc453"}</msg>
+<arg>chromium</arg>
+<arg>headless=No</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-04-20T22:00:04.077240" elapsed="1.464925"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2026-04-20T22:00:05.543381" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2026-04-20T22:00:05.548169" level="INFO">Successfully created context. </msg>
+<msg time="2026-04-20T22:00:05.548207" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2026-04-20T22:00:05.542537" elapsed="0.005707"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-04-20T22:00:05.791281" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173/~riikkono/AlignmentGuide/</msg>
+<arg>http://localhost:5173/~riikkono/AlignmentGuide/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-04-20T22:00:05.548355" elapsed="0.243024"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2026-04-20T22:00:05.795289" level="INFO">Title: 'Alignment Guide'</msg>
+<msg time="2026-04-20T22:00:05.795376" level="INFO">${Page Title} = Alignment Guide</msg>
+<var>${Page Title}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2026-04-20T22:00:05.791507" elapsed="0.003880"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${Page Title}</arg>
+<arg>Alignment Guide</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2026-04-20T22:00:05.795490" elapsed="0.000195"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2026-04-20T22:00:05.809834" level="INFO">Locator found successfully.</msg>
+<msg time="2026-04-20T22:00:05.809945" level="INFO">${login} = xpath=(//a[@href='/~riikkono/AlignmentGuide/login/' and text()='Log in'])[1]</msg>
+<var>${login}</var>
+<arg>xpath=(//a[@href='/~riikkono/AlignmentGuide/login/' and text()='Log in'])[1]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2026-04-20T22:00:05.795741" elapsed="0.014216"/>
+</kw>
+<kw name="Click With Options" owner="Browser">
+<msg time="2026-04-20T22:00:05.810348" level="INFO">Clicks the element 'xpath=(//a[@href='/~riikkono/AlignmentGuide/login/' and text()='Log in'])[1]'.</msg>
+<arg>${login}</arg>
+<arg>delay=3 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-20T22:00:05.810076" elapsed="3.114172"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-04-20T22:00:08.925049" level="INFO">Types the text 'riikkono@metropolia.fi' in the given field.</msg>
+<arg>css=input[name="email"]</arg>
+<arg>${Email}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-20T22:00:08.924573" elapsed="0.021568"/>
+</kw>
+<kw name="Type Secret" owner="Browser">
+<arg>css=input[name="password"]</arg>
+<arg>$Password</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given secret from ``variable_name`` into the text field
+found by ``selector``.</doc>
+<status status="PASS" start="2026-04-20T22:00:08.946276" elapsed="0.007280"/>
+</kw>
+<kw name="Click With Options" owner="Browser">
+<msg time="2026-04-20T22:00:08.953960" level="INFO">Clicks the element '"Login"'.</msg>
+<arg>"Login"</arg>
+<arg>delay= 5 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-20T22:00:08.953712" elapsed="5.074115"/>
+</kw>
+<status status="PASS" start="2026-04-20T22:00:04.076867" elapsed="9.951280"/>
+</test>
+<status status="PASS" start="2026-04-20T22:00:04.016579" elapsed="10.013783"/>
+</suite>
+<suite id="s1-s2" name="Task3" source="/Users/riikka/Downloads/AG-Front-End/tests/task3.robot">
+<test id="s1-s2-t1" name="Test Web Form Fields" line="5">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-04-20T22:00:14.059751" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 2000.0, "timeout": 30000.0, "tracesDir": "/Users/riikka/Downloads/AG-Front-End/tests/outputs/browser/traces/temp/f6a2dcb9-3de6-4bc6-bfa5-6614f07f393d"}</msg>
+<msg time="2026-04-20T22:00:17.093505" level="INFO">Starting Browser process /Users/riikka/Downloads/AG-Front-End/.venv/lib/python3.14/site-packages/Browser/wrapper/index.js using at 127.0.0.1:52487</msg>
+<msg time="2026-04-20T22:00:18.531637" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":2000,"timeout":30000,"tracesDir":"/Users/riikka/Downloads/AG-Front-End/tests/outputs/browser/traces/temp/f6a2dcb9-3de6-4bc6-bfa5-6614f07f393d"}</msg>
+<arg>chromium</arg>
+<arg>headless=No</arg>
+<arg>slowMo=2000 ms</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-04-20T22:00:14.059392" elapsed="4.472623"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2026-04-20T22:00:18.533810" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2026-04-20T22:00:18.539193" level="INFO">Successfully created context. </msg>
+<msg time="2026-04-20T22:00:18.539233" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2026-04-20T22:00:18.532479" elapsed="0.006810"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-04-20T22:00:20.950729" level="INFO">Successfully initialized new page object and opened url: https://www.selenium.dev/selenium/web/web-form.html</msg>
+<arg>https://www.selenium.dev/selenium/web/web-form.html</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-04-20T22:00:18.539394" elapsed="2.411809"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-04-20T22:00:20.976338" level="INFO">Waited for Element with selector text=Submit at state visible</msg>
+<arg>text=Submit</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-04-20T22:00:20.951756" elapsed="0.024746"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-04-20T22:00:20.981180" level="INFO">Waited for Element with selector css=select[name="my-select"] at state visible</msg>
+<arg>css=select[name="my-select"]</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-04-20T22:00:20.976723" elapsed="0.004532"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2026-04-20T22:00:20.981931" level="INFO">Selects the option(s) 2 by attribute SelectAttribute.value from element css=select[name="my-select"].</msg>
+<arg>css=select[name="my-select"]</arg>
+<arg>value</arg>
+<arg>2</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-20T22:00:20.981396" elapsed="2.025085"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-04-20T22:00:23.007473" level="INFO">Types the text 'New York' in the given field.</msg>
+<arg>css=input[name="my-datalist"]</arg>
+<arg>New York</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-20T22:00:23.006830" elapsed="4.026700"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-04-20T22:00:27.041124" level="INFO">Waited for Element with selector css=input[type="file"] at state visible</msg>
+<arg>css=input[type="file"]</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-04-20T22:00:27.034143" elapsed="0.007124"/>
+</kw>
+<kw name="Upload File By Selector" owner="Browser">
+<arg>css=input[type="file"]</arg>
+<arg>/Users/riikka/Downloads/02. Kognitiivinen katselmointi.pdf</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Uploads file from ``path`` to file input element matched by selector.</doc>
+<status status="PASS" start="2026-04-20T22:00:27.041461" elapsed="2.015247"/>
+</kw>
+<kw name="Uncheck Checkbox" owner="Browser">
+<arg>css=#my-check-1</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Unchecks the checkbox found by ``selector``.</doc>
+<status status="PASS" start="2026-04-20T22:00:29.057435" elapsed="2.024083"/>
+</kw>
+<kw name="Check Checkbox" owner="Browser">
+<arg>css=#my-check-2</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
+<status status="PASS" start="2026-04-20T22:00:31.082114" elapsed="2.030319"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-04-20T22:00:33.113727" level="INFO">Clicks the element 'css=#my-radio-2'.</msg>
+<arg>css=#my-radio-2</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-20T22:00:33.112942" elapsed="2.035793"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-04-20T22:00:35.150421" level="INFO">Clicks the element 'text=Submit'.</msg>
+<arg>text=Submit</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-20T22:00:35.149315" elapsed="2.089438"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-04-20T22:00:37.252003" level="INFO">Waited for Element with selector css=#message at state visible</msg>
+<arg>css=#message</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-04-20T22:00:37.239351" elapsed="0.012806"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2026-04-20T22:00:37.263970" level="INFO">Text: 'Received!'</msg>
+<msg time="2026-04-20T22:00:37.264144" level="INFO">${msg} = Received!</msg>
+<var>${msg}</var>
+<arg>css=#message</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-20T22:00:37.252419" elapsed="0.011743"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${msg}</arg>
+<arg>Received!</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2026-04-20T22:00:37.264364" elapsed="0.000355"/>
+</kw>
+<msg time="2026-04-20T22:00:37.268398" level="INFO">Switching context to context=6d42316d-6441-4514-8652-780996c8509a in CURRENT</msg>
+<msg time="2026-04-20T22:00:37.273477" level="INFO">Successfully changed active context: context=6d42316d-6441-4514-8652-780996c8509a</msg>
+<msg time="2026-04-20T22:00:37.296008" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2026-04-20T22:00:14.059139" elapsed="23.205710"/>
+</test>
+<status status="PASS" start="2026-04-20T22:00:14.032015" elapsed="23.264382"/>
+</suite>
+<suite id="s1-s3" name="Task4" source="/Users/riikka/Downloads/AG-Front-End/tests/task4.robot">
+<test id="s1-s3-t1" name="Login to AlignmentGuide" line="6">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-04-20T22:00:37.299672" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 2000.0, "timeout": 30000.0, "tracesDir": "/Users/riikka/Downloads/AG-Front-End/tests/outputs/browser/traces/temp/0602e127-79d4-4c50-9686-997f80d48806"}</msg>
+<msg time="2026-04-20T22:00:37.450281" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":2000,"timeout":30000,"tracesDir":"/Users/riikka/Downloads/AG-Front-End/tests/outputs/browser/traces/temp/0602e127-79d4-4c50-9686-997f80d48806"}</msg>
+<arg>chromium</arg>
+<arg>headless=No</arg>
+<arg>slowMo=2000 ms</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-04-20T22:00:37.299340" elapsed="0.151142"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2026-04-20T22:00:37.452773" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2026-04-20T22:00:37.457643" level="INFO">Successfully created context. </msg>
+<msg time="2026-04-20T22:00:37.457684" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2026-04-20T22:00:37.450842" elapsed="0.006871"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-04-20T22:00:39.721697" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173/~riikkono/AlignmentGuide/</msg>
+<arg>http://localhost:5173/~riikkono/AlignmentGuide/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-04-20T22:00:37.457835" elapsed="2.264319"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2026-04-20T22:00:39.728916" level="INFO">Title: 'Alignment Guide'</msg>
+<msg time="2026-04-20T22:00:39.729101" level="INFO">${Page Title} = Alignment Guide</msg>
+<var>${Page Title}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2026-04-20T22:00:39.722733" elapsed="0.006391"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${Page Title}</arg>
+<arg>Alignment Guide</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2026-04-20T22:00:39.729574" elapsed="0.000486"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2026-04-20T22:00:39.746765" level="INFO">Locator found successfully.</msg>
+<msg time="2026-04-20T22:00:39.746992" level="INFO">${login} = xpath=(//a[@href='/~riikkono/AlignmentGuide/login/' and text()='Log in'])[1]</msg>
+<var>${login}</var>
+<arg>xpath=(//a[@href='/~riikkono/AlignmentGuide/login/' and text()='Log in'])[1]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2026-04-20T22:00:39.730216" elapsed="0.016800"/>
+</kw>
+<kw name="Click With Options" owner="Browser">
+<msg time="2026-04-20T22:00:39.747825" level="INFO">Clicks the element 'xpath=(//a[@href='/~riikkono/AlignmentGuide/login/' and text()='Log in'])[1]'.</msg>
+<arg>${login}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-20T22:00:39.747286" elapsed="2.067241"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-04-20T22:00:41.815878" level="INFO">Types the text 'riikkono@metropolia.fi' in the given field.</msg>
+<arg>css=input[name="email"]</arg>
+<arg>${Email}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-20T22:00:41.815035" elapsed="4.040319"/>
+</kw>
+<kw name="Type Secret" owner="Browser">
+<arg>css=input[name="password"]</arg>
+<arg>$Password</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given secret from ``variable_name`` into the text field
+found by ``selector``.</doc>
+<status status="PASS" start="2026-04-20T22:00:45.855884" elapsed="4.026329"/>
+</kw>
+<kw name="Click With Options" owner="Browser">
+<msg time="2026-04-20T22:00:49.884069" level="INFO">Clicks the element '"Login"'.</msg>
+<arg>"Login"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-20T22:00:49.882948" elapsed="2.060160"/>
+</kw>
+<kw name="Hover" owner="Browser">
+<arg>css=a[href="/~riikkono/AlignmentGuide/health/"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Moves the virtual mouse and scrolls to the element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-20T22:00:51.943619" elapsed="2.090782"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-04-20T22:00:54.040725" level="INFO">Waited for Element with selector css=a[href*="mentalhealth"] at state visible</msg>
+<arg>css=a[href*="mentalhealth"]</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-04-20T22:00:54.034873" elapsed="0.006020"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-04-20T22:00:54.041863" level="INFO">Clicks the element 'css=a[href*="mentalhealth"]'.</msg>
+<arg>css=a[href*="mentalhealth"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-20T22:00:54.041135" elapsed="2.057153"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-04-20T22:00:56.099018" level="INFO">Clicks the element 'css=button[data-mood="happy"]'.</msg>
+<arg>css=button[data-mood="happy"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-20T22:00:56.098532" elapsed="2.046769"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-04-20T22:00:58.147069" level="INFO">Clicks the element 'css=button[data-mood="calm"]'.</msg>
+<arg>css=button[data-mood="calm"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-20T22:00:58.145904" elapsed="2.034223"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-04-20T22:01:00.181494" level="INFO">Types the text 'Feeling rested' in the given field.</msg>
+<arg>id=notes</arg>
+<arg>Feeling rested</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-20T22:01:00.180651" elapsed="4.023981"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-04-20T22:01:04.206010" level="INFO">Clicks the element 'id=entry-submit-btn'.</msg>
+<arg>id=entry-submit-btn</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-20T22:01:04.205151" elapsed="2.043328"/>
+</kw>
+<status status="PASS" start="2026-04-20T22:00:37.299182" elapsed="28.949811"/>
+</test>
+<status status="PASS" start="2026-04-20T22:00:37.298006" elapsed="28.953004"/>
+</suite>
+<suite id="s1-s4" name="Task5" source="/Users/riikka/Downloads/AG-Front-End/tests/task5.robot">
+<test id="s1-s4-t1" name="Login to AlignmentGuide" line="6">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-04-20T22:01:06.264286" level="INFO">Switching browser to browser=9615a396-311b-4890-a5fc-c5772d61e730</msg>
+<msg time="2026-04-20T22:01:06.265973" level="INFO">Successfully changed active browser: browser=9615a396-311b-4890-a5fc-c5772d61e730</msg>
+<msg time="2026-04-20T22:01:06.266034" level="INFO">Reusing existing browser with id: browser=9615a396-311b-4890-a5fc-c5772d61e730</msg>
+<arg>chromium</arg>
+<arg>headless=No</arg>
+<arg>slowMo=2000 ms</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-04-20T22:01:06.263857" elapsed="0.002220"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2026-04-20T22:01:06.267586" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2026-04-20T22:01:06.274036" level="INFO">Successfully created context. </msg>
+<msg time="2026-04-20T22:01:06.274124" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2026-04-20T22:01:06.266308" elapsed="0.007886"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-04-20T22:01:08.420649" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173/~riikkono/AlignmentGuide/</msg>
+<arg>http://localhost:5173/~riikkono/AlignmentGuide/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-04-20T22:01:06.274449" elapsed="2.146492"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2026-04-20T22:01:08.426281" level="INFO">Title: 'Alignment Guide'</msg>
+<msg time="2026-04-20T22:01:08.426440" level="INFO">${Page Title} = Alignment Guide</msg>
+<var>${Page Title}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2026-04-20T22:01:08.421334" elapsed="0.005125"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${Page Title}</arg>
+<arg>Alignment Guide</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2026-04-20T22:01:08.426649" elapsed="0.000467"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2026-04-20T22:01:08.442356" level="INFO">Locator found successfully.</msg>
+<msg time="2026-04-20T22:01:08.442602" level="INFO">${login} = xpath=(//a[@href='/~riikkono/AlignmentGuide/login/' and text()='Log in'])[1]</msg>
+<var>${login}</var>
+<arg>xpath=(//a[@href='/~riikkono/AlignmentGuide/login/' and text()='Log in'])[1]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2026-04-20T22:01:08.427274" elapsed="0.015354"/>
+</kw>
+<kw name="Click With Options" owner="Browser">
+<msg time="2026-04-20T22:01:08.443328" level="INFO">Clicks the element 'xpath=(//a[@href='/~riikkono/AlignmentGuide/login/' and text()='Log in'])[1]'.</msg>
+<arg>${login}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-20T22:01:08.442870" elapsed="2.072506"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-04-20T22:01:10.517205" level="INFO">Types the text 'riikkono@metropolia.fi' in the given field.</msg>
+<arg>css=input[name="email"]</arg>
+<arg>${EMAIL}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-20T22:01:10.515965" elapsed="4.035735"/>
+</kw>
+<kw name="Type Secret" owner="Browser">
+<arg>css=input[name="password"]</arg>
+<arg>$PASSWORD</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given secret from ``variable_name`` into the text field
+found by ``selector``.</doc>
+<status status="PASS" start="2026-04-20T22:01:14.552200" elapsed="4.027687"/>
+</kw>
+<kw name="Click With Options" owner="Browser">
+<msg time="2026-04-20T22:01:18.581541" level="INFO">Clicks the element '"Login"'.</msg>
+<arg>"Login"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-20T22:01:18.580596" elapsed="2.027535"/>
+</kw>
+<status status="PASS" start="2026-04-20T22:01:06.263571" elapsed="14.345110"/>
+</test>
+<status status="PASS" start="2026-04-20T22:01:06.252407" elapsed="14.358647"/>
+</suite>
+<suite id="s1-s5" name="Task6" source="/Users/riikka/Downloads/AG-Front-End/tests/task6.robot">
+<test id="s1-s5-t1" name="Test Web Form" line="9">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-04-20T22:01:22.529876" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 2000.0, "timeout": 30000.0, "tracesDir": "/Users/riikka/Downloads/AG-Front-End/tests/outputs/browser/traces/temp/4743a262-902e-4574-ae4a-f90483fad586"}</msg>
+<msg time="2026-04-20T22:01:22.547755" level="INFO">Starting Browser process /Users/riikka/Downloads/AG-Front-End/.venv/lib/python3.14/site-packages/Browser/wrapper/index.js using at 127.0.0.1:52545</msg>
+<msg time="2026-04-20T22:01:24.072683" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":2000,"timeout":30000,"tracesDir":"/Users/riikka/Downloads/AG-Front-End/tests/outputs/browser/traces/temp/4743a262-902e-4574-ae4a-f90483fad586"}</msg>
+<arg>chromium</arg>
+<arg>headless=No</arg>
+<arg>slowMo=2000 ms</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-04-20T22:01:22.529520" elapsed="1.543501"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2026-04-20T22:01:24.074283" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 800,
+    "height": 600
+  }
+}</msg>
+<msg time="2026-04-20T22:01:24.080154" level="INFO">Successfully created context. </msg>
+<msg time="2026-04-20T22:01:24.080267" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 800, 'height': 600}}</msg>
+<arg>viewport={'width': 800, 'height': 600}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2026-04-20T22:01:24.073300" elapsed="0.007081"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-04-20T22:01:26.298898" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173/~riikkono/AlignmentGuide/</msg>
+<arg>http://localhost:5173/~riikkono/AlignmentGuide/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-04-20T22:01:24.080606" elapsed="2.218683"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2026-04-20T22:01:26.307366" level="INFO">Title: 'Alignment Guide'</msg>
+<msg time="2026-04-20T22:01:26.307606" level="INFO">${Page Title} = Alignment Guide</msg>
+<var>${Page Title}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2026-04-20T22:01:26.299739" elapsed="0.007977"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${Page Title}</arg>
+<arg>Alignment Guide</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2026-04-20T22:01:26.307961" elapsed="0.000414"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2026-04-20T22:01:26.327073" level="INFO">Locator found successfully.</msg>
+<msg time="2026-04-20T22:01:26.327338" level="INFO">${login} = xpath=(//a[@href='/~riikkono/AlignmentGuide/login/' and text()='Log in'])[1]</msg>
+<var>${login}</var>
+<arg>xpath=(//a[@href='/~riikkono/AlignmentGuide/login/' and text()='Log in'])[1]</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2026-04-20T22:01:26.308505" elapsed="0.018918"/>
+</kw>
+<kw name="Click With Options" owner="Browser">
+<msg time="2026-04-20T22:01:26.328157" level="INFO">Clicks the element 'xpath=(//a[@href='/~riikkono/AlignmentGuide/login/' and text()='Log in'])[1]'.</msg>
+<arg>${login}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-20T22:01:26.327683" elapsed="2.066913"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-04-20T22:01:28.396097" level="INFO">Types the text '***' in the given field.</msg>
+<arg>css=input[name="email"]</arg>
+<arg>${Email}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-20T22:01:28.395142" elapsed="4.042730"/>
+</kw>
+<kw name="Type Secret" owner="Browser">
+<arg>css=input[name="password"]</arg>
+<arg>$Password</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given secret from ``variable_name`` into the text field
+found by ``selector``.</doc>
+<status status="PASS" start="2026-04-20T22:01:32.438336" elapsed="4.029101"/>
+</kw>
+<kw name="Click With Options" owner="Browser">
+<msg time="2026-04-20T22:01:36.469003" level="INFO">Clicks the element '"Login"'.</msg>
+<arg>"Login"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-20T22:01:36.468146" elapsed="2.060405"/>
+</kw>
+<status status="PASS" start="2026-04-20T22:01:22.528819" elapsed="16.000212"/>
+</test>
+<status status="PASS" start="2026-04-20T22:01:20.612523" elapsed="17.919124"/>
+</suite>
+<status status="PASS" start="2026-04-20T22:00:04.005748" elapsed="94.552581"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="5" fail="0" skip="0">Tests</stat>
+<stat name="Task2" id="s1-s1" pass="1" fail="0" skip="0">Tests.Task2</stat>
+<stat name="Task3" id="s1-s2" pass="1" fail="0" skip="0">Tests.Task3</stat>
+<stat name="Task4" id="s1-s3" pass="1" fail="0" skip="0">Tests.Task4</stat>
+<stat name="Task5" id="s1-s4" pass="1" fail="0" skip="0">Tests.Task5</stat>
+<stat name="Task6" id="s1-s5" pass="1" fail="0" skip="0">Tests.Task6</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -9,6 +9,22 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^7.2.4"
-  }
+    "vite": "^7.3.2"
+  },
+  "description": "Kuvakaappaukset sovelluksen käyttöliittymästä     ![alt text](image.png)     ![alt text](image-1.png)",
+  "main": "vite.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riikkakononen/Front-End.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/riikkakononen/Front-End/issues"
+  },
+  "homepage": "https://github.com/riikkakononen/Front-End#readme"
 }
