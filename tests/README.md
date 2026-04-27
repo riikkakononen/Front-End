@@ -7,10 +7,12 @@
 - Koodi on ChatGPT:n avulla luotu.
 
 ![alkuperäinen tilanne](image-2.png)
-Alkuperäinen tilanne
+
+_Alkuperäinen tilanne_
 
 ![testin jälkeen](image.png)
-Testin jälkeen
+
+_Testin jälkeen_
 
 ## Tehtävä 4
 
@@ -18,7 +20,8 @@ Testin jälkeen
 - Koodi on ChatGPT:n avulla luotu
 
 ![testin aikana](image-1.png)
-Testin aikana
+
+_Testin aikana_
 
 ## Tehtävä 5
 
@@ -34,6 +37,6 @@ Testin aikana
 
 Testien ajon jälkeen raportit löytyvät täältä:
  
-- [Outputs](tests/outputs/)
-    - [Viimeisin report](test/outputs/report.html)
-    - [Viimeisin log](test/outputs/log.html)
+- [Outputs](outputs/)
+    - [Viimeisin report](outputs/report.html)
+    - [Viimeisin log](outputs/log.html)
